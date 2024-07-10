@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(228, 228, 238);
+}
+
+header {
+    background-color: rgb(130, 119, 224);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    /* height: 96px; */
+}
+
+#community-identity {
+    display: flex;
+}
+
+#community-identity img {
+    width: 70px;
+    height: 60px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#community-identity h1 {
+    text-transform: uppercase;
+    padding: 0 6px;
+}
+
+#community-identity h1 a {
+    text-decoration: none;
+    color: rgb(235, 235, 21);
+}
+
+header nav {
+    /* padding: 6px ; */
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+header nav ul li{
+    /* margin: auto; */
+    padding: 6px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+    font-weight: 600;
+}
+
+footer {
+    background-color: rgb(130, 119, 224);
+}
