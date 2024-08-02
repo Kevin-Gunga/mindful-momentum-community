@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mindful momentum community</title>
     <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/6f82847460.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/index.js" defer></script>
-    <!-- favicon -->
   </head>
   <body>
     <!-- blue/yellow/white -->
@@ -21,65 +24,75 @@
       <nav>
         <ul>
           <li><a href="">about</a></li>
-          <li><a href="">service</a></li>
+          <li><a href="">services</a></li>
           <li><a href="">topics</a></li>
           <li><a href="">booking</a></li>
+          <li><a href="">events</a></li>
           <li><a href="">contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <ol id="community-founders">
-        <li><img src="" alt="" /></li>
-        <li><img src="" alt="" /></li>
-      </ol>
+      <div id="mental-health-catch-image">
+        <img src="/images/mental_health.png" alt="mental health support" />
+        <p id="message">
+          Your Mind Matters<a href=""
+            ><i class="fa-solid fa-period fa-2x"></i
+          ></a>
+        </p>
+      </div>
 
-      <div id="about">
-        <h2>about</h2>
-        <p id="about">
-          The mindful momentum community is an organisation founded on the
-          identified need of equal access to mental health services to all
-          members of the community regardless of background, belief,status or
-          ethnicity.
-        </p>
-        <p>
-          we hope to bridge the gap between the professionals in mental health
-          i.e psychologists, psychiatrists and the members of the society.We
-          also aim to create mental health awareness which will turn eradicate
-          the stigma that has plagued our society about mental illness and
-          related issues.
-        </p>
+      <div id="about-organisation">
+        <ul id="about">
+          <h2>about us</h2>
+          <li>
+            The mindful momentum community is an organisation founded on the
+            identified need of equal access to mental health services to all
+            members of the community regardless of background, belief,status or
+            ethnicity.
+          </li>
+          <li>
+            We hope to bridge the gap between the professionals in mental health
+            i.e psychologists, psychiatrists and the members of the society.We
+            also aim to create mental health awareness which will turn eradicate
+            the stigma that has plagued our society about mental illness and
+            related issues.
+          </li>
+        </ul>
+
         <ul id="goals">
           <h2>goals</h2>
           <li>
-            the major goal of this initiative is to eradicate stigma and raise
+            The major goal of this initiative is to eradicate stigma and raise
             awareness on the subject of mental health by giving education in
             form of psychological counselling and mental health talks.
           </li>
           <li>
-            the other goal of this foundation is to provide psychosocial support
+            The other goal of this foundation is to provide psychosocial support
             in order to try and address the mental health issues identified
             while working collaboratively with the company management and
             employees as well.
           </li>
         </ul>
+
         <ul id="objectives">
           <h2>objectives</h2>
           <li>
-            to create educative and informative avenues for the delivery of
+            To create educative and informative avenues for the delivery of
             accurate and professional information on mental health and issues
-            surrouning it.
+            surrounding it.
           </li>
           <li>
-            to make psychological/mental health services available and
+            To make psychological/mental health services available and
             accessible to all in order to promote mental, emotional and
             spiritual wellness.
           </li>
         </ul>
+
         <ul id="mission">
           <h2>mission</h2>
           <li>
-            to ensure equitable access of all community members to research
+            To ensure equitable access of all community members to research
             proven information on mental health and also quality services in
             order to promote their holistic wellness.This in turn go a long way
             in aiding in the eradicationof the stigma that plagues the subject
@@ -88,33 +101,94 @@
           </li>
           <!-- <li>p</li> -->
         </ul>
+
         <ul id="vision">
+          <h2>vision</h2>
           <li>
-            to be an organisation that promotes and supports the well-being of
+            To be an organisation that promotes and supports the well-being of
             all community members so as to achieve the nation building agenda.To
             serve and transform.
           </li>
         </ul>
       </div>
 
-      <div id="services"></div>
+      <div id="community-founders">
+        <h2>founders</h2>
+        <div id="founders-content">
+          <div class="founders">
+            <ul>
+              <li><img src="/images/kevinn_gunga.jpeg" alt="" /></li>
+              <li>name</li>
+              <li>rle</li>
+            </ul>
+          </div>
+          <div class="founders">
+            <ul>
+              <li><img src="/images/kevinn_gunga.jpeg" alt="" /></li>
+              <li>name</li>
+              <li>rle</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="services">
+        <h2>services</h2>
+      </div>
       <!-- <div class=""></div> -->
-      <ol id="past-speakers">
-        <li><img src="" alt="" /></li>
-      </ol>
+
+      <div id="past-speakers">
+        <h2>speakers</h2>
+        <ul>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+        </ul>
+      </div>
     </main>
     <footer>
       <div id="service-booking">
-        <form action="">
-            <input type="email" name="" id="" placeholder="enter your email address">
-            <input type="phone-number" name="" id="" placeholder="enter your phone number">
-            <input type="location" name="" id="" placeholder="enter your location">
-            <button>submit</button>
-            <!-- <input type="submit"> -->
+        <h3>book with us:</h3>
+        <form action="" method="POST">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="phone_number"
+            name="phone_number"
+            id="phone_number"
+            placeholder="Enter your phone number"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="location"
+            name="location"
+            id="location"
+            placeholder="Enter your location"
+            required
+            autocomplete="off"
+          />
+          <!-- pay -->
+          <button id="submit-booking-button">submit</button>
         </form>
       </div>
-      <div id="media"></div>
-      <p>&copy;2024.developed by <a href="">kevin gunga</a></p>
+      <div id="media">
+        <h2>get in touch</h2>
+        <div id="media-urls">
+          <a href=""><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href=""><i class="fa-solid fa-square-phone fa-2x"></i></a>
+        </div>
+      </div>
+      <p>
+        &copy;2024 developed by <a href="">kevin gunga</a>. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
