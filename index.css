@@ -7,13 +7,14 @@ body {
 header {
   background-color: rgb(130, 119, 224);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 2% 0%;
   /* height: 96px; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
 }
 
 #community-identity {
@@ -21,31 +22,24 @@ header {
 }
 
 #community-identity img {
-  width: 70px;
-  height: 60px;
-  margin: auto;
+  width: 70%;
+  height: 270px;
+  margin: 0 auto;
+  padding: 20px;
   border-radius: 5px;
-}
-
-#community-identity h1 {
-  text-transform: uppercase;
-  padding: 0 6px;
-}
-
-#community-identity h1 a {
-  text-decoration: none;
-  color: rgb(235, 235, 21);
 }
 
 header nav {
   /* padding: 6px ; */
   margin: auto;
+  padding: 0;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
   margin: auto;
+  padding: 0;
 }
 
 header nav ul li {
@@ -58,10 +52,8 @@ header nav ul li a {
   text-transform: uppercase;
   color: #ffff;
   font-weight: 600;
-}
-
-main {
-  margin-top: 80px;
+  border-left: 1px solid #d1ced1;
+  padding: 8px;
 }
 
 #mental-health-catch-image {
@@ -83,17 +75,6 @@ main {
   padding: 0 10px;
   font-size: 28px;
   width: 300px;
-}
-
-#about-organisation ul {
-  list-style: none;
-  padding: 0;
-  /* margin: 16px auto; */
-}
-
-#about-organisation ul li {
-  margin: 10px auto;
-  width: 80%;
 }
 
 h2 {
@@ -120,6 +101,25 @@ h2::after {
   background: linear-gradient(to right, rgb(212, 200, 32) 50%, #ffff 50%);
 }
 
+#mission-vision ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 16px auto; */
+}
+
+#mission h2 {
+  width: 120px;
+}
+
+#vision h2 {
+  width: 100px;
+}
+
+#mission-vision ul li {
+  margin: 10px auto;
+  width: 70%;
+}
+
 #community-founders {
   display: flex;
   flex-direction: column;
@@ -128,19 +128,10 @@ h2::after {
   padding: 0;
 }
 
-#founders-content {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
-  gap: 96px;
-  margin: 20px auto;
+#community-founders h2 {
+  width: 150px;
 }
 
-.founders ul {
-  border: 2px solid rgb(240, 240, 240);
-  border-radius: 6px;
-  margin: 0;
-  padding: 10px;
-}
 .founders ul li {
   list-style: none;
   /* padding: 10px; */
@@ -152,8 +143,183 @@ h2::after {
   width: 350px;
 }
 
+#founders-content {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 96px;
+  margin: 20px auto;
+}
+
+.founders ul {
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* #services {} */
+
+
+#services h2 {
+  width: 220px;
+}
+
+#services-list {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  color: #ffff;
+}
+
+/* #services-list ul { margin: auto;} */
+
+h3 {
+  text-transform: uppercase;
+  width: 300px;
+  margin: 10px auto;
+}
+
+#services-list img {
+  width: 400px;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+  padding: 0 20px;
+}
+
+#program-1 {
+  background-color: rgb(150, 143, 214);
+  margin: 20px;
+  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  border-radius: 8px;
+  /* margin: auto; */
+}
+
+#program-1 ul {
+  margin: auto;
+  padding: 0;
+}
+
+#program-2 {
+  background-color: rgb(110, 98, 218);
+  margin: 20px;
+  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  border-radius: 8px;
+}
+
+#program-2 ul {
+  margin: auto;
+  padding: 0;
+}
+
+#program-3 {
+  background-color: rgb(45, 27, 202);
+  margin: 20px;
+  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  border-radius: 8px;
+}
+
+#program-3 ul {
+  margin: auto;
+  padding: 0;
+}
+
+#services-list ul li {
+  list-style: none;
+  text-align: center;
+}
+
+/* #impact-stories {} */
+
+#impact-stories h2 {
+  width: 220px;
+}
+
+#testimonials {
+  justify-content: center;
+  margin: 20px auto;
+  width: 300px;
+  height: 200px;
+}
+
+#testimonials p {}
+
+#volunteer-donations {
+  text-align: center;
+  /* width: 200px; */
+}
+
+#volunteer-donations h2 {
+  width: 320px;
+}
+
+.vd-buttons {
+  margin: 20px auto;
+  /* padding: 0 ; */
+  width: 400px;
+}
+
+.vd-buttons button{
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  text-transform: capitalize;
+  margin: 0 20px;
+  background-color: #fffdff;
+  cursor: pointer;
+}
+
+#past-speaches {}
+
+#past-speaches h2 {
+  width: 200px;
+}
+
 footer {
   background-color: rgb(130, 119, 224);
+}
+
+#about-goals-objectives {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: auto; */
+  width: 80%;
+  /* height: 300px; */
+  margin: auto;
+}
+
+#about-goals-objectives ul {
+  /* list-style: none; */
+  padding: 0 20px;
+  /* margin: 16px auto; */
+  /* width: 40%; */
+}
+
+#about h2 {
+  width: 140px;
+}
+
+#goals h2 {
+  width: 100px;
+}
+
+#objectives h2 {
+  width: 150px;
+}
+
+#about-goals-objectives ul li {
+  margin: 10px auto;
+  /* width: 90%; */
+  color: #fffdff ;
+}
+
+#booking-media {
+  display: flex;
+  justify-content:center;
+  padding: 50px 20px;
+  margin: 0 0 50px 0;
 }
 
 #service-booking {
@@ -162,6 +328,7 @@ footer {
   height: 200px;
   padding: 20px;
   border-radius: 6px;
+  margin: 0 20px;
 }
 
 /* form {} */
@@ -171,9 +338,15 @@ form input {
   height: 25px;
   width: 200px;
   background-color: rgb(228, 228, 238);
-  border: none;
+  border: solid #fffdff;
+  transition: border-color 0.3s ease; 
   margin: 10px 0;
   border-radius: 4px;
+}
+
+form input:focus {
+  border-color: rgb(240, 240, 240);
+  outline: none;
 }
 
 #submit-booking-button {
@@ -196,16 +369,20 @@ footer p {
     display: flex;
     flex-direction: column;
     /* width: 130px; */
-    margin: 0 0 50px 0;
+    /* margin: 0 0 50px 0; */
+    margin: 0 20px;
 }
 
 #media-urls {
     width: 220px;
     margin: 20px auto;
+    border: 2px solid #fff;
+    padding: 6px;
 }
 
 #media a {
     padding:  0 10px;
+    color: #ffff;
 }
 
 footer p a {
