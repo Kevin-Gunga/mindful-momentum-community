@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mindful momentum community</title>
+    <title>Mindful Momentum community</title>
     <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/6f82847460.js"
@@ -13,15 +13,19 @@
   </head>
   <body>
     <!-- blue/yellow/white -->
-    <header>
+    <header id="main-header">
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
       <nav>
         <ul>
-          <li><a href="">about us</a></li>
-          <li><a href="">mission</a></li>
-          <li><a href="">vision</a></li>
-          <li><a href="">goals</a></li>
-          <li><a href="">objectives</a></li>
-          <!-- <li><a href="">contact</a></li> -->
+          <li><a href="#about">about us</a></li>
+          <li><a href="#mission">mission</a></li>
+          <li><a href="#vision">vision</a></li>
+          <li><a href="#goals">goals</a></li>
+          <li><a href="#objectives">objectives</a></li>
         </ul>
       </nav>
 
@@ -30,25 +34,46 @@
           src="/images/WhatsApp Image 2024-08-22 at 15.42.43.jpeg"
           alt="mindful momentum community"
         />
-        <!-- <h1><a href="#index.html">mindful momentum community</a></h1> -->
       </div>
-      <!-- <img src="/images/mmc attract.png" alt=""> -->
+
       <nav>
         <ul>
-          <li><a href="">programs</a></li>
+          <li><a href="#services">services</a></li>
           <li><a href="">impact stories</a></li>
-          <li><a href="">testimonials</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
           <li><a href="">past speeches</a></li>
-          <li><a href="">booking</a></li>
-          <!-- <li><a href="">contact</a></li> -->
+          <li><a href="#service-booking">booking</a></li>
         </ul>
       </nav>
     </header>
+
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <i class="fa-regular fa-x fa-2x" style="color: #ffff"></i>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#about">about us</a></li>
+          <li><a href="#mission">mission</a></li>
+          <li><a href="#vision">vision</a></li>
+          <li><a href="#goals">goals</a></li>
+          <li><a href="#objectives">objectives</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="">impact stories</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
+          <li><a href="">past speeches</a></li>
+          <li><a href="#service-booking">booking</a></li>
+        </ul>
+      </nav>
+    </aside>
+
     <main>
       <div id="mental-health-catch-image">
         <img src="/images/mental_health.png" alt="mental health support" />
         <p id="message">
-          Your Mind Matters<a href=""
+          Your Mind Matters...<a href=""
             ><i class="fa-solid fa-period fa-2x"></i
           ></a>
         </p>
@@ -84,22 +109,22 @@
           <div class="founders">
             <ul>
               <li><img src="/images/fou1.jpeg" alt="" /></li>
-              <li>job mwangi</li>
-              <li>psychologist</li>
+              <li><p>job mwangi</p></li>
+              <li><p>psychologist</p></li>
             </ul>
           </div>
           <div class="founders">
             <ul>
               <li><img src="/images/fou2.jpeg" alt="" /></li>
-              <li>harun njoroge</li>
-              <li>psychologist</li>
+              <li><p>harun njoroge</p></li>
+              <li><p>psychologist</p></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div id="services">
-        <h2>our programs</h2>
+        <h2>our services</h2>
         <div id="services-list">
           <div id="program-1">
             <ul>
@@ -247,7 +272,7 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Enter your email address"
+              placeholder="Enter your email address..."
               required
               autocomplete="off"
             />
@@ -255,7 +280,7 @@
               type="phone_number"
               name="phone_number"
               id="phone_number"
-              placeholder="Enter your phone number"
+              placeholder="Enter your phone number..."
               required
               autocomplete="off"
             />
@@ -263,7 +288,7 @@
               type="location"
               name="location"
               id="location"
-              placeholder="Enter your location"
+              placeholder="Enter your location..."
               required
               autocomplete="off"
             />
@@ -274,7 +299,11 @@
         <div id="media">
           <!-- <h2>get in touch</h2> -->
           <div id="media-urls">
-            <a href=""><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+            <a
+              href="https://chat.whatsapp.com/DZTZGwlYOAT1ZIDoJ1xFN3"
+              target="_blank"
+              ><i class="fa-brands fa-square-whatsapp fa-2x"></i
+            ></a>
             <a
               href="https://www.tiktok.com/@mindful.momentum._?_t=8ohWFK3ldh8&_r=1"
               target="_blank"

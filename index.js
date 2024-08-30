@@ -1,14 +1,14 @@
 const message = document.getElementById('message')
 
 const messages = [
-    "Your Mind Matters",
-    "Breathe. You're Safe",
-    "Healing Begins Here",
-    "Strength in Support",
-    "You Are Not Alone",
-    "Hope Starts Today",
-    "Empower Your Journey",
-    "Peace of Mind"
+    "Your Mind Matters...",
+    "Breathe. You're Safe...",
+    "Healing Begins Here...",
+    "Strength in Support...",
+    "You Are Not Alone...",
+    "Hope Starts Today...",
+    "Empower Your Journey...",
+    "Peace of Mind..."
 ];
 
 let index = 0;

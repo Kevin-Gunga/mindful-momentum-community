@@ -1,21 +1,19 @@
 body {
-  /* background: linear-gradient(to right, rgb(228, 228, 238), rgb(200, 200, 220)); */
-  background: linear-gradient(to bottom right, rgb(228, 228, 238), rgb(200, 200, 220));
+  background: linear-gradient(
+    to bottom right,
+    rgb(228, 228, 238),
+    rgb(200, 200, 220)
+  );
   margin: 0;
   padding: 0;
 }
 
-header {
+#main-header {
   background-color: rgb(130, 119, 224);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2% 0%;
-  /* height: 96px; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
 }
 
 #community-identity {
@@ -24,49 +22,120 @@ header {
 
 #community-identity img {
   width: 70%;
-  height: 270px;
+  height: 16.88rem;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
 }
 
-header nav {
-  /* padding: 6px ; */
+#main-header nav {
   margin: auto;
   padding: 0;
 }
 
-header nav ul {
+#main-header ul {
   list-style: none;
   display: flex;
   margin: auto;
   padding: 0;
 }
 
-header nav ul li {
-  /* margin: auto; */
+#main-header nav ul li {
   padding: 6px;
 }
 
-header nav ul li a {
+#main-header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffff;
   font-weight: 600;
-  border-left: 1px solid #d1ced1;
+  /* border-left: 1px solid #d1ced1; */
+  border-left: 1px solid  rgba(255, 255, 255, .2);
   padding: 8px;
+}
+
+#side-drawer {
+  background-color: rgb(63, 61, 61);
+  position: fixed;
+  display: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 19, 19);
+}
+
+#side-drawer li {
+  margin: 0rem 0;
+  width: 100%;
+}
+
+#side-drawer li a {
+  display: block;
+  border-bottom: solid 0.5px rgba(255, 255, 255, .2);
+  border-top: solid 0.5px rgba(255, 255, 255, .2);;
+  padding: 0 20px;
+  min-height: 43px;
+  line-height: 43px;
+  transition: all .2s;
+  color: rgb(240, 240, 240);
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#side-drawer li a:hover {
+  background-color: rgb(87, 83, 83);
+}
+
+.menu-btn {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 4px;
+  background-color: white;
 }
 
 #mental-health-catch-image {
   display: flex;
   justify-content: center;
-  /* justify-content: space-around; */
   background-color: #c4c4c4;
 }
 
 #mental-health-catch-image img {
   padding: 30px 10px;
-  width: 800px;
+  width: 50rem;
 }
 
 #message {
@@ -74,8 +143,8 @@ header nav ul li a {
   font-weight: 600;
   color: rgb(14, 14, 4);
   padding: 0 10px;
-  font-size: 28px;
-  width: 300px;
+  font-size: 1.75rem;
+  width: 18.75rem;
 }
 
 h2 {
@@ -83,13 +152,10 @@ h2 {
   text-transform: uppercase;
   position: relative;
   width: 180px;
-  /* text-transform: uppercase; */
-  /* text-align: center; */
-  /* font-size: 20px; */
-  /* font-family: serif; */
+  font-size: 24px;
   padding: 5px 0;
   margin: 0 auto 0 auto;
-  /* border-radius: 5px; */
+  color: #072970;
 }
 
 h2::after {
@@ -99,21 +165,24 @@ h2::after {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, rgba(208,174,51,255) 50%, #ffff 50%);
+  background: linear-gradient(to right, rgba(208, 174, 51, 255) 50%, #ffff 50%);
 }
 
 #mission-vision ul {
   list-style: none;
   padding: 0;
-  /* margin: 16px auto; */
+}
+
+#mission-vision ul li {
+  font-size: 1rem;
 }
 
 #mission h2 {
-  width: 120px;
+  width: 7.5rem;
 }
 
 #vision h2 {
-  width: 100px;
+  width: 6.25rem;
 }
 
 #mission-vision ul li {
@@ -130,33 +199,40 @@ h2::after {
 }
 
 #community-founders h2 {
-  width: 150px;
-}
-
-.founders ul li {
-  list-style: none;
-  /* padding: 10px; */
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.founders li img {
-  height: 380px;
-  width: 350px;
+  width: 9.4rem;
 }
 
 #founders-content {
   display: grid;
   grid-template-columns: 4fr 4fr;
-  gap: 96px;
+  gap: 6rem;
   margin: 20px auto;
 }
 
 .founders ul {
-  border: 1px solid rgb(240, 240, 240);
+  /* border: 1px solid rgb(240, 240, 240); */
+  border: 2px solid  rgba(255, 255, 255, .2);
   border-radius: 6px;
   margin: 0;
   padding: 10px;
+}
+
+.founders ul li {
+  list-style: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.founders ul li img {
+  height: 28.2rem;
+  width: 21.87rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.founders ul li p {
+  background: #ffff;
+  margin: 0;
+  font-size: 1rem;
 }
 
 #services {
@@ -165,28 +241,28 @@ h2::after {
 }
 
 #services h2 {
-  width: 220px;
+  width: 13.75rem;
 }
 
 #services-list {
   display: flex;
-  /* width: 360px; */
   justify-content: center;
   margin: 0 auto 0 auto;
   color: #ffff;
+  font-size: 1rem;
 }
-
-/* #services-list ul { margin: auto;} */
 
 h3 {
   text-transform: uppercase;
-  width: 300px;
+  justify-content: center;
+  text-align: center;
   margin: 10px auto;
+  font-size: 1.1rem;
 }
 
 #services-list img {
-  width: 240px;
-  height: 240px;
+  width: 15rem;
+  height: 15rem;
   flex-shrink: 0;
   object-fit: cover;
   padding: 0 10px;
@@ -195,10 +271,10 @@ h3 {
 #program-1 {
   background-color: rgb(150, 143, 214);
   margin: 20px;
-  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  /* box-shadow: 0px 0px 0px 3px rgb(240, 240, 240); */
+  box-shadow: 0px 0px 0px 3px  rgba(255, 255, 255, .2);
   border-radius: 8px;
-  /* margin: auto; */
-  width: 360px;
+  width: 22.5rem;
 }
 
 #program-1 ul {
@@ -209,9 +285,10 @@ h3 {
 #program-2 {
   background-color: rgb(110, 98, 218);
   margin: 20px;
-  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  /* box-shadow: 0px 0px 0px 3px rgb(240, 240, 240); */
+  box-shadow: 0px 0px 0px 3px  rgba(255, 255, 255, .2);
   border-radius: 8px;
-  width: 360px;
+  width: 22.5rem;
 }
 
 #program-2 ul {
@@ -222,9 +299,10 @@ h3 {
 #program-3 {
   background-color: rgb(45, 27, 202);
   margin: 20px;
-  box-shadow: 0px 0px 0px 3px rgb(240, 240, 240);
+  /* box-shadow: 0px 0px 0px 3px rgb(240, 240, 240); */
+  box-shadow: 0px 0px 0px 3px  rgba(255, 255, 255, .2);
   border-radius: 8px;
-  width: 360px;
+  width: 22.5rem;
 }
 
 #program-3 ul {
@@ -237,14 +315,11 @@ h3 {
   text-align: center;
 }
 
-/* #impact-stories {} */
-
 #impact-stories h2 {
-  width: 220px;
+  width: 13.75rem;
 }
 
 #testimonials {
-  /* justify-content: center; */
   width: 80%;
   margin: 20px auto;
 }
@@ -256,29 +331,26 @@ h3 {
 
 #testimonials p {
   display: flex;
-  width: 350px;
-  /* height: 200px; */
+  width: 21.88rem;
   padding: 0 32px;
+  font-size: 1rem;
 }
 
 #volunteer-donations {
   text-align: center;
-  /* width: 200px; */
-  margin: 50px;
+  margin: 50px auto;
 }
 
 #volunteer-donations h2 {
-  width: 320px;
+  width: 20rem;
 }
 
 .vd-buttons {
   margin: 20px auto;
-  /* padding: 0 ; */
-  width: 400px;
-  /* height: 50px; */
+  width: 25rem;
 }
 
-.vd-buttons button{
+.vd-buttons button {
   padding: 6px;
   border-radius: 6px;
   border: none;
@@ -286,15 +358,13 @@ h3 {
   margin: 0 20px;
   background-color: #ffff;
   cursor: pointer;
-  color: rgb(92,132,196);
-  height: 40px;
-  width: 100px;
+  color: rgb(92, 132, 196);
+  height: 2.5rem;
+  width: 6.25rem;
 }
 
-/* #past-speaches {} */
-
 #past-speaches h2 {
-  width: 200px;
+  width: 12.5rem;
 }
 
 footer {
@@ -303,64 +373,62 @@ footer {
 
 #about-goals-objectives {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin: auto; */
   width: 80%;
-  /* height: 300px; */
   margin: auto;
+  font-size: 1rem;
 }
 
 #about-goals-objectives ul {
-  /* list-style: none; */
   padding: 0 20px;
-  /* margin: 16px auto; */
-  /* width: 40%; */
+  margin: 16px 20px;
+  /* border: 1px solid #ffff; */
+  border: 1px solid  rgba(255, 255, 255, .2);
 }
 
 #about h2 {
-  width: 140px;
+  width: 8.75rem;
 }
 
 #goals h2 {
-  width: 100px;
+  width: 6.25rem;
 }
 
 #objectives h2 {
-  width: 150px;
+  width: 9.4rem;
 }
 
 #about-goals-objectives ul li {
   margin: 10px auto;
-  /* width: 90%; */
-  color: #fffdff ;
+  color: #fffdff;
 }
 
 #booking-media {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   padding: 50px 20px;
   margin: 0 0 50px 0;
 }
 
 #service-booking {
   background-color: rgb(154, 146, 228);
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   padding: 20px;
   border-radius: 6px;
   margin: 0 20px;
 }
 
-/* form {} */
+form {
+  margin: auto;
+}
 
 form input {
   display: block;
   height: 25px;
-  width: 200px;
+  width: 12.5rem;
   background-color: rgb(228, 228, 238);
-  border:  solid rgb(228, 228, 238);
-  transition: border-color 0.3s ease; 
+  border: solid rgb(228, 228, 238);
+  transition: border-color 0.3s ease;
   margin: 10px 0;
   border-radius: 4px;
 }
@@ -371,7 +439,8 @@ form input:focus {
 }
 
 #submit-booking-button {
-  border: none;
+  display: flex;
+  border: none; 
   margin: auto;
   padding: 6px;
   border-radius: 4px;
@@ -379,34 +448,329 @@ form input:focus {
   font-weight: 600;
 }
 
+#media {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+#media-urls {
+  width: 13.75rem;
+  margin: 20px auto;
+  /* border: 1px solid #fff; */
+  border: 1px solid  rgba(255, 255, 255, .2);
+  padding: 6px;
+}
+
+#media a {
+  padding: 0 10px;
+  color: #ffff;
+}
+
 footer p {
   margin: 0;
   padding: 0 0 10px 0;
   text-align: center;
   text-transform: capitalize;
-}
-
-#media {
-    display: flex;
-    flex-direction: column;
-    /* width: 130px; */
-    /* margin: 0 0 50px 0; */
-    margin: 0 20px;
-}
-
-#media-urls {
-    width: 220px;
-    margin: 20px auto;
-    border: 2px solid #fff;
-    padding: 6px;
-}
-
-#media a {
-    padding:  0 10px;
-    color: #ffff;
+  font-size: 1rem;
 }
 
 footer p a {
   color: #ffff;
   text-decoration: none;
+}
+
+@media (max-width: 64rem) {
+  #main-header {
+    padding: 0 2%;
+  }
+
+  #main-header nav ul li {
+    padding: 0px;
+  }
+
+  #main-header ul li a {
+    /* font-size: 0.8rem; */
+  }
+
+  #services {
+    width: auto;
+    margin: 32px auto;
+  }
+
+  #services h2 {
+    /* width: 9rem; */
+  }
+
+  #services-list {
+    /* font-size: 0.8rem; */
+  }
+
+  #services-list img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  #program-1 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+  #program-2 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+  #program-3 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+
+  #about-goals-objectives {
+    flex-direction: column;
+    /* font-size: 0.8rem; */
+    width: 90%;
+  }
+}
+
+@media (max-width: 48rem) {
+  #main-header {
+    padding: 0 0%;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    padding: 1% 1%;
+  }
+
+  #community-identity img {
+    width: 100%;
+    padding: 0px 0;
+    border-radius: 0px;
+  }
+
+  #mental-health-catch-image img {
+    padding: 20px 0px;
+    width: 30rem;
+  }
+
+  #message {
+    padding: 0 2px;
+    font-size: 1rem;
+    width: 17rem;
+  }
+
+  #founders-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .founders ul li img {
+    height: 28rem;
+    width: 21.87rem;
+    margin: 0 0 0.2rem 0;
+  }
+
+  #services-list {
+    flex-direction: column;
+    width: 360px;
+    margin: 0 auto 0 auto;
+  }
+
+  #volunteer-donations {
+    margin: 10px auto;
+  }
+
+  #about-goals-objectives {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 30rem) {
+  .menu-btn {
+    height: 2rem;
+    margin: 10px 0;
+    padding: 1% 2%;
+  }
+
+  .menu-btn span {
+    width: 60%;
+    height: 2px;
+  }
+
+  #side-drawer {
+    top: 8%;
+  }
+
+  #side-drawer header {
+    margin: 6px 0;
+  }
+
+  #side-drawer li a {
+    font-size: 0.9rem;
+  }
+
+  #community-identity img {
+    width: 100%;
+    height: 9rem;
+    padding: 0px 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #mental-health-catch-image img {
+    padding: 20px 0px;
+    width: 16rem;
+  }
+
+  #message {
+    padding: 0 2px;
+    font-size: 0.7rem;
+    width: 17rem;
+  }
+
+  #mission h2 {
+    width: 5.6rem;
+  }
+
+  #vision h2 {
+    width: 4.5rem;
+  }
+
+  #mission-vision ul li {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  #community-founders h2 {
+    width: 7rem;
+  }
+
+  .founders ul li img {
+    height: 22rem;
+    width: 18rem;
+  }
+
+  .founders ul li p {
+    font-size: 0.8rem;
+  }
+
+  #services {
+    width: auto;
+    margin: 32px auto;
+  }
+
+  #services h2 {
+    width: 9rem;
+  }
+
+  #services-list {
+    font-size: 0.8rem;
+  }
+
+  #services-list img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  #program-1 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+  #program-2 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+  #program-3 {
+    margin: 10px auto;
+    width: 18rem;
+  }
+
+  #testimonials {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #testimonials-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimonials p {
+    width: 21rem;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  #volunteer-donations h2 {
+    width: 14rem;
+  }
+
+  .vd-buttons {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .vd-buttons button {
+    margin: 0 1rem;
+    height: 2rem;
+    width: 5.5rem;
+  }
+
+  #about-goals-objectives {
+    flex-direction: column;
+    font-size: 0.8rem;
+    width: 90%;
+  }
+ 
+  #about h2 {
+    width: 6rem;
+  }
+  
+  #goals h2 {
+    width: 5rem;
+  }
+  
+  #objectives h2 {
+    width: 7rem;
+  }
+
+  #booking-media {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  #service-booking {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    width: 15rem;
+    font-size: 0.8rem;
+  }
+
+  form input {
+    margin: 10px auto;
+  }
+
+  #media-urls {
+    padding: 2px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
