@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mindful Momentum community</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="{% static '/index.css' %}" />
     <script
       src="https://kit.fontawesome.com/6f82847460.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/index.js" defer></script>
+    <script src="{% static '/index.js' %}" defer></script>
   </head>
   <body>
     <!-- blue/yellow/white -->
@@ -31,7 +32,7 @@
 
       <div id="community-identity">
         <img
-          src="/images/WhatsApp Image 2024-08-22 at 15.42.43.jpeg"
+          src="{% static '/images/WhatsApp Image 2024-08-22 at 15.42.43.jpeg' %}"
           alt="mindful momentum community"
         />
       </div>
@@ -71,7 +72,7 @@
 
     <main>
       <div id="mental-health-catch-image">
-        <img src="/images/mental_health.png" alt="mental health support" />
+        <img src="{% static './images/mental_health.png' %}" alt="mental health support" />
         <p id="message">
           Your Mind Matters...<a href=""
             ><i class="fa-solid fa-period fa-2x"></i
@@ -108,14 +109,14 @@
         <div id="founders-content">
           <div class="founders">
             <ul>
-              <li><img src="/images/fou1.jpeg" alt="" /></li>
+              <li><img src="{% static './images/fou1.jpeg' %}" alt="" /></li>
               <li><p>job mwangi</p></li>
               <li><p>psychologist</p></li>
             </ul>
           </div>
           <div class="founders">
             <ul>
-              <li><img src="/images/fou2.jpeg" alt="" /></li>
+              <li><img src="{% static './images/fou2.jpeg' %}" alt="" /></li>
               <li><p>harun njoroge</p></li>
               <li><p>psychologist</p></li>
             </ul>
@@ -130,7 +131,7 @@
             <ul>
               <li><h3>psychological services</h3></li>
               <li>
-                <img src="/images/psychological.png" alt="psychological" />
+                <img src="{% static './images/psychological.png' %}" alt="psychological" />
               </li>
               <li>
                 <p>
@@ -147,7 +148,7 @@
             <ul>
               <li><h3>inspirational services</h3></li>
               <li>
-                <img src="/images/inspirational.jpg" alt="inspirational" />
+                <img src="{% static '/images/inspirational.jpg' %}" alt="inspirational" />
               </li>
               <li>
                 <p>
@@ -163,7 +164,7 @@
           <div id="program-3">
             <ul>
               <li><h3>motivational services</h3></li>
-              <li><img src="/images/motivational.png" alt="motivational" /></li>
+              <li><img src="{% static '/images/motivational.png' %}" alt="motivational" /></li>
               <li>
                 <p>
                   We offer motivational services that inspire individuals to
