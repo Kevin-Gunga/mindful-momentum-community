@@ -473,12 +473,15 @@ footer p {
   text-align: center;
   text-transform: capitalize;
   font-size: 1rem;
+  color: #ffff;
 }
 
-footer p a {
+/* footer p a {
   color: #ffff;
   text-decoration: none;
-}
+} */
+
+/* MEDIA QUERIES */
 
 @media (max-width: 64rem) {
   #main-header {

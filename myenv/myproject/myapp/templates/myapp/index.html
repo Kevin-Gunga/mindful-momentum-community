@@ -268,7 +268,8 @@
       <div id="booking-media">
         <div id="service-booking">
           <h3>book with us:</h3>
-          <form action="" method="POST">
+          <form action="/" method="POST">
+            {% csrf_token %}
             <input
               type="email"
               name="email"
@@ -289,7 +290,7 @@
               type="location"
               name="location"
               id="location"
-              placeholder="Enter your location..."
+              placeholder="Enter your county..."
               required
               autocomplete="off"
             />
@@ -325,7 +326,7 @@
       <div id="virtual-assistant"></div>
 
       <p>
-        &copy;2024 developed by <a href="">kevin gunga</a>. All rights reserved.
+        &copy;2024 mindful momentum community.All rights reserved.
       </p>
     </footer>
   </body>
