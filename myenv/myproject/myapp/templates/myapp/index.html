@@ -72,7 +72,10 @@
 
     <main>
       <div id="mental-health-catch-image">
-        <img src="{% static './images/mental_health.png' %}" alt="mental health support" />
+        <img
+          src="{% static './images/mental_health.png' %}"
+          alt="mental health support"
+        />
         <p id="message">
           Your Mind Matters...<a href=""
             ><i class="fa-solid fa-period fa-2x"></i
@@ -131,7 +134,10 @@
             <ul>
               <li><h3>psychological services</h3></li>
               <li>
-                <img src="{% static './images/psychological.png' %}" alt="psychological" />
+                <img
+                  src="{% static './images/psychological.png' %}"
+                  alt="psychological"
+                />
               </li>
               <li>
                 <p>
@@ -148,7 +154,10 @@
             <ul>
               <li><h3>inspirational services</h3></li>
               <li>
-                <img src="{% static '/images/inspirational.jpg' %}" alt="inspirational" />
+                <img
+                  src="{% static '/images/inspirational.jpg' %}"
+                  alt="inspirational"
+                />
               </li>
               <li>
                 <p>
@@ -164,7 +173,12 @@
           <div id="program-3">
             <ul>
               <li><h3>motivational services</h3></li>
-              <li><img src="{% static '/images/motivational.png' %}" alt="motivational" /></li>
+              <li>
+                <img
+                  src="{% static '/images/motivational.png' %}"
+                  alt="motivational"
+                />
+              </li>
               <li>
                 <p>
                   We offer motivational services that inspire individuals to
@@ -270,32 +284,117 @@
           <h3>book with us:</h3>
           <form action="/" method="POST">
             {% csrf_token %}
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email address..."
-              required
-              autocomplete="off"
-            />
-            <input
-              type="phone_number"
-              name="phone_number"
-              id="phone_number"
-              placeholder="Enter your phone number..."
-              required
-              autocomplete="off"
-            />
-            <input
-              type="location"
-              name="location"
-              id="location"
-              placeholder="Enter your county..."
-              required
-              autocomplete="off"
-            />
-            <!-- pay -->
-            <button id="submit-booking-button">submit</button>
+
+            <section id="section-1">
+              <h4>step 1:please enter your appointment details</h4>
+              <label for="professional"
+                >Preferred healthcare professional</label
+              >
+              <select
+                type="text"
+                name="professional"
+                id="professional"
+                required
+              >
+                <option value="">choose a professional</option>
+                <option value="">psychological</option>
+                <option value="">inspirational</option>
+                <option value="">motivational</option>
+              </select>
+
+              <label for="appointment_date">Appointment date</label>
+              <input
+                type="date"
+                name="appointment_date"
+                id="appointment_date"
+                placeholder="select appointment date..."
+                required
+                autocomplete="off"
+              />
+
+              <label for="appointment_time">Appointment time</label>
+              <input
+                type="time"
+                name="appointment_time"
+                id="appointment_time"
+                placeholder="8:00 AM"
+                required
+                autocomplete="off"
+              />
+
+              <label for="symptoms">Describe your symptoms (optional)</label>
+              <textarea
+                type="text"
+                name="symptoms"
+                id="symptoms"
+                placeholder="Describe your symptoms"
+              >
+              </textarea>
+              <button type="button" id="next-section>" class="button">
+                next
+              </button>
+            </section>
+
+            <section id="section-2">
+              <h4>step 2: enter your personal details</h4>
+              <p>
+                enter your information below so we can contact you to schedule
+                your appointment.
+              </p>
+              <label for="f_name">First name</label>
+              <input
+                type="text"
+                id="f_name"
+                name="f_name"
+                placeholder="Enter your first name..."
+              />
+
+              <label for="l_name">Last name</label>
+              <input
+                type="text"
+                id="l_name"
+                name="l_name"
+                placeholder="Enter your last name..."
+              />
+
+              <label for="phone_number">Phone number</label>
+              <input
+                type="number"
+                id="phone_number"
+                name="phone_number"
+                placeholder="Enter your phone number..."
+              />
+
+              <label for="email">Email address(optional)</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address..."
+                autocomplete="off"
+              />
+
+              <label for="payment_method">Payment method</label>
+              <select
+                type="payment_method"
+                name="payment_method"
+                id="payment_method"
+                required
+              >
+                <option value="">choose payment method</option>
+                <option value="">M-pesa</option>
+                <option value="">cash</option>
+              </select>
+              <p id="confirmation"></p>
+              <div id="buttons">
+                <button type="button" id="previous-section>" class="button">
+                  previous
+                </button>
+                <button type="submit" id="submit-booking-button" class="button">
+                  submit
+                </button>
+              </div>
+            </section>
           </form>
         </div>
         <div id="media">
@@ -325,9 +424,7 @@
 
       <div id="virtual-assistant"></div>
 
-      <p>
-        &copy;2024 mindful momentum community.All rights reserved.
-      </p>
+      <p>&copy;2024 mindful momentum community.All rights reserved.</p>
     </footer>
   </body>
 </html>

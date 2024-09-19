@@ -159,11 +159,11 @@ h2 {
 }
 
 h2::after {
-  content: "";
+  content: ""; 
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%;  
   height: 3px;
   background: linear-gradient(to right, rgba(208, 174, 51, 255) 50%, #ffff 50%);
 }
@@ -411,21 +411,46 @@ footer {
 
 #service-booking {
   background-color: rgb(154, 146, 228);
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 30rem;
+  /* height: 12.5rem; */
   padding: 20px;
   border-radius: 6px;
   margin: 0 20px;
+  /* margin: auto; */
 }
-
+ 
 form {
-  margin: auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  text-align: center;
+  /* margin: auto; */
 }
 
-form input {
+#section-2 {
+  display: none;
+}
+
+form h4{
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  /* width: 180px; */
+  /* font-size: 24px; */
+  padding: 5px 0;
+  margin: 0 auto 0 auto;
+  color: #072970;
+}
+
+form label {
   display: block;
+  margin-top: 1rem;
+}
+
+form input,textarea,select {
+  /* display: block; */
   height: 25px;
-  width: 12.5rem;
+  width: 15rem;
   background-color: rgb(228, 228, 238);
   border: solid rgb(228, 228, 238);
   transition: border-color 0.3s ease;
@@ -433,12 +458,27 @@ form input {
   border-radius: 4px;
 }
 
-form input:focus {
+textarea {
+  
+}
+
+form input,textarea,select:focus {
   border: 4px solid rgb(240, 240, 240);
   outline: none;
 }
 
-#submit-booking-button {
+.button {
+  display: flex;
+  border: none; 
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* #submit-booking-button {
   display: flex;
   border: none; 
   margin: auto;
@@ -446,6 +486,16 @@ form input:focus {
   border-radius: 4px;
   background-color: white;
   font-weight: 600;
+} */
+
+#confirmation {
+  color: rgb(160, 121, 13);
+}
+
+#buttons {
+  width: 200px;
+  margin: 20px auto;
+  display: flex;
 }
 
 #media {
